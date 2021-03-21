@@ -1,5 +1,10 @@
 body {
-    margin: 40px;
+    margin: 0px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .photo {
+    grid-area: photo;
   }
   
   .sidebar {
@@ -20,10 +25,10 @@ body {
   
   .wrapper {
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 120px 120px 120px;
+    grid-gap: 0px;
+    grid-template-columns: 20% 40% 40%;
     grid-template-areas:
-      '....... header header'
+      'photo header header'
       'sidebar content content'
       'footer  footer  footer';
     background-color: #fff;
@@ -31,14 +36,26 @@ body {
   }
   
   .box {
-    background-color: #0000ff;
-    color: #fff;
-    border-radius: 5px;
+    background-color: #F8F9F9;
+    color: #444;
     padding: 10px;
     font-size: 150%;
   }
+
+  #sidebar-list {
+      list-style-type: none;
+      line-height: 28px;
+  }
+
+  .photo img {
+    height: 100px;
+    border-radius: 50px;
+    margin-left: 35%;
+  }
   
   .header,
+  .photo,
   .footer {
     background-color: #00173d;
+    color: #F8F9F9;
   }
