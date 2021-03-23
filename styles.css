@@ -47,15 +47,24 @@ body {
       line-height: 28px;
   }
 
-  .photo img {
+  #projects {
+      text-align:center;
+  }
+
+  #bio-image {
     height: 100px;
     border-radius: 50px;
-    margin-left: 35%;
+    margin-left: 15%;
+  }
+
+  .circle {
+    height:140px;
+    width:140px;
+    border-radius:70px;
   }
   
   .header,
-  .photo,
-  .footer {
+  .photo {
     background-color: #00173d;
     color: #F8F9F9;
   }

@@ -3,7 +3,7 @@
 
 <head>
     <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
 </head>
@@ -26,10 +26,11 @@
         </div>
       </nav>
     <div class="wrapper">
-        <div class="box photo"><img src="images/T946CQYKS-U95MBGV9U-7173f9765667-512.jpg"></div>
-        <div class="box header"><h1>Kristen's Projects</h1></div>
+        <div class="box photo"></div>
+        <div class="box header"><h1>Projects</h1></div>
         <div class="box sidebar">
             <p>
+                <img id="bio-image" src="images/T946CQYKS-U95MBGV9U-7173f9765667-512.jpg">
                 <ul id="sidebar-list">
                     <li>LinkedIn</li>
                     <li>GitHub</li>
@@ -38,48 +39,31 @@
             </p>
         </div>
         <div class="box content">
-            <div id="bio">
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          Pacmen Exercise
-                        </button>
-                      </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                          Eye Movement Exercise
-                        </button>
-                      </h2>
-                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                          Bus Stop Exercise
-                        </button>
-                      </h2>
-                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-            </div>
+            <div class="row" id="projects">
+                <div class="col-lg-4">
+                  <img class="circle" src="images/pacmen.png" />
+          
+                  <h2>Pacmen Exercise</h2>
+                  <p>This is a Pacman factory! Create as many Pacmen as you want, and then send them on their way!</p>
+                  <p><a class="btn btn-secondary" href="https://kristenacharya.github.io/pacmen/">View project »</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img class="circle" src="images/eyes.png" />
+          
+                  <h2>Eye Exercise</h2>
+                  <p>This is a pair of all seeing eyes. Well, they can't see everything. But they CAN see where your cursor is!</p>
+                  <p><a class="btn btn-secondary" href="https://kristenacharya.github.io/eye-movement/">View project »</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img class="circle" src="images/bus.png" />
+          
+                  <h2>Real Time Bus Tracker</h2>
+                  <p>This is an animated depiction of the bus stops between MIT and Harvard, for when you need a stealth getaway from the Pacmen you've set loose, and the eyes following you.</p>
+                  <p><a class="btn btn-secondary" href="https://kristenacharya.github.io/bus-stops/">View project »</a></p>
+                </div><!-- /.col-lg-4 -->
+              </div>
         </div>
-        <div class="box footer">Footer</div>
+        <div class="box footer"></div>
     </div>
 </body>
 
