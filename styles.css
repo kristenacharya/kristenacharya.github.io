@@ -3,6 +3,11 @@ body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
+  a {
+    text-decoration: none;
+    color: #00264d;
+  }
+
   .photo {
     grid-area: photo;
   }
@@ -52,8 +57,8 @@ body {
   }
 
   #bio-image {
-    height: 100px;
-    border-radius: 50px;
+    height: 140px;
+    border-radius: 10px;
     margin-left: 15%;
   }
 
@@ -61,6 +66,7 @@ body {
     height:140px;
     width:140px;
     border-radius:70px;
+    object-fit: cover;
   }
   
   .header,
